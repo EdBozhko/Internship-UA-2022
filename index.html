@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,69 +13,92 @@
 
     <link rel="stylesheet" href="./src/css/styles.css">
 </head>
+
 <body>
-    <header>
-        <a href="">twiscode logo</a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="">Home</a>
+    <header class="main-header">
+        <a class="main-header__logo">twiscode logo</a>
+        <nav class="main-header__navigation">
+            <ul class="navigation__list">
+                <li class="navigation__list-item">
+                    <a href="#" class="navigation__link">Home</a>
                 </li>
-                <li>
-                    <a href="">About</a>
+                <li class="navigation__list-item">
+                    <a href="#about" class="navigation__link">About</a>
                 </li>
-                <li>
-                    <a href="">Work</a>
+                <li class="navigation__list-item">
+                    <a href="#work" class="navigation__link">Work</a>
                 </li>
-                <li>
-                    <a href="">Our Customer</a>
+                <li class="navigation__list-item">
+                    <a href="#our-customers" class="navigation__link">Our Customer</a>
                 </li>
             </ul>
-            <button>search button</button>
+            <form class="main-header__search">
+                <input name="search" type="search">
+                <button>search button</button>
+            </form>
         </nav>
     </header>
     <main>
-        <section>
-            <h1>We Code We Deliver</h1>
-            <p>Twiscode specializes in developing high-performing mobile and web applications.</p>
-            <button>Get in Touch</button>
+        <section class="container">
+            <div class="content">
+                <h1>We Code We Deliver</h1>
+                <p>
+                    Twiscode specializes in developing high-performing mobile and web applications.
+                    <button>Get in Touch</button>
+                </p>
+            </div>
+            <div class="image-container"></div>
         </section>
-        <section>
-            <h2>Who we are?</h2>
-            <p>Twiscode is a London-based distributed computing startup specialized in providing digital solutions.</p>
-            <p>Our startup’s services are structured around dedicated web service solutions missions. They are aimed at all the structural, functional departments of financial institutions.</p>
-            <h2>What We Do?</h2>
-            <h3>Mobile Application</h3>
-            <p>Building mobile applications is never easy.  P2P lending app ? Logistic App ? E-Commerce App ?  We have done them all. Done them all well.  Done them all fast.</p>
-            <h3>Web Application</h3>
-            <p>We can build any web applications you need.  A personal blog ? Company Profile ? E-commerce ?  or any specific functionalities ? We got you covered!  We have a strong team of web developers that can  follow your stack and needs.</p>
+        <section class="container">
+            <div id="about" class="content">
+                <h2>Who we are?</h2>
+                <p>Twiscode is a London-based distributed computing startup specialized in providing digital solutions.</p>
+                <p>Our startup’s services are structured around dedicated web service solutions missions. They are aimed at
+                    all the structural, functional departments of financial institutions.</p>                
+            </div>
+            <div class="image-container"></div>
+
+            <div id="work" class="content">            
+                <h2>What We Do?</h2>
+                <h3>Mobile Application</h3>
+                <p>Building mobile applications is never easy. P2P lending app ? Logistic App ? E-Commerce App ? We have
+                    done them all. Done them all well. Done them all fast.</p>
+                <h3>Web Application</h3>
+                <p>We can build any web applications you need. A personal blog ? Company Profile ? E-commerce ? or any
+                    specific functionalities ? We got you covered! We have a strong team of web developers that can follow
+                    your stack and needs.</p>
+            </div>
+            <div class="image-container"></div>
         </section>
-        <section>
+        <section id="our-customers">
             <h2>Our Customers are our biggest fans</h2>
-            <ul>
-                <li>cisco logo</li>
-                <li>legoas</li>
-                <li>mandiri sekuritas logo</li>
-                <li>amarth logo</li>
-                <li>paxel logo</li>
+            <ul class="customers__list">
+                <li class="customers__list-item">cisco logo</li>
+                <li class="customers__list-item">legoas logo</li>
+                <li class="customers__list-item">mandiri sekuritas logo</li>
+                <li class="customers__list-item">amarth logo</li>
+                <li class="customers__list-item">paxel logo</li>
             </ul>
         </section>
     </main>
-    <footer>
-        <a href="">twiscode logo</a>
-        <a href="tel: +49 (0)341 221 796 00">+49 (0)341 221 796 00</a>
-        <a href="mailto: info@twiscode.com">info@twiscode.com</a>
-        <span>© 2022</span>
+    <footer class="main-footer">
+        <a href="#" class="main-footer__logo">twiscode logo</a>
+        <a href="tel: +49 (0)341 221 796 00" class="main-footer__phone">+49 (0)341 221 796 00</a>
+        <a href="mailto: info@twiscode.com" class="main-footer__email">info@twiscode.com</a>
+        <div class="copyright">
+            <span class="copyright__sign">©</span>
+            <span class="copyright__year">2022</span>
+        </div>
     </footer>
-    <div>
-        <form>
-            <h3>Leave a message</h3>
-            <input type="text">
-            <input type="text">
-            <input type="email">
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <button>Send</button>
-            <button>Close modal</button>
+    <div class="feedback-popup">
+        <form class="feedback-popup__form">
+            <h3 class="feedback-popup__title">Leave a message</h3>
+            <input class="feedback-popup__input" type="text">
+            <input class="feedback-popup__input" type="text">
+            <input class="feedback-popup__input" type="email">
+            <textarea class="feedback-popup__input" name="message" id="" cols="30" rows="10"></textarea>
+            <button class="feedback-popup__send">Send</button>
+            <button class="feedback-popup__close-popup">Close modal</button>
         </form>
     </div>
 </body>
