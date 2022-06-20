@@ -1,0 +1,53 @@
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('../../fonts/roboto-medium-webfont.woff2') format('woff2'),
+        url('../../fonts/roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0px;
+    padding: 0px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 1200px;
+    
+    margin: 0 auto;
+    padding: 0;
+    
+    font-family: "robotomedium", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    
+    color: #5E5B5B;
+    background-color: #ffffff;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "poppins", Arial, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
