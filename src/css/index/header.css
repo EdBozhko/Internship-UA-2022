@@ -16,7 +16,10 @@
 .navigation__list-item {
     display: flex;
     align-items: center;
-    margin-left: 32px;
+}
+
+.navigation__list-item:not(:first-child) {
+    margin-left: 37px;
 }
 
 .navigation__link {
