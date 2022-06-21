@@ -2,7 +2,7 @@
     display: flex;
 }
 
-.container > * {
+.container>* {
     flex: 1 1 50%;
 }
 
@@ -50,15 +50,15 @@
 }
 
 .content.hero {
-    padding-left: 108px;    
+    padding-left: 108px;
 }
 
 .content.about {
-    padding-left: 132px;    
+    padding-left: 132px;
 }
 
 .content.work {
-    padding-left: 112px;    
+    padding-left: 112px;
 }
 
 .content__subheading {
@@ -73,24 +73,34 @@
     margin-top: 32px;
 }
 
-.content__button.hero {
+.button {
     margin: 0;
     padding: 0;
-    margin-top: 26px;
 
     display: block;
 
-    background-color: #9FD685;
     border: none;
 
     width: 252px;
     height: 64px;
 
-    color: #FFFFFF;
     font-family: "poppins", Arial, sans-serif;
     font-weight: 700;
     font-size: 22px;
     line-height: 24px;
+    color: #FFFFFF;
+
+    cursor: pointer;
+}
+
+.button:active {
+    transform: scale(0.9);
+}
+
+.button.hero {
+    margin-top: 26px;
+
+    background-color: #9FD685;
 }
 
 #our-customers {

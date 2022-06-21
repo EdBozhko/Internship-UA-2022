@@ -48,7 +48,7 @@
                 <p class="content__description hero">
                     Twiscode specializes in developing<br>high-performing mobile and web<br>applications.
                 </p>
-                <button class="content__button hero">Get in Touch</button>
+                <button class="button hero">Get in Touch</button>
             </div>
             <div class="image-container hero"></div>
         </section>
@@ -118,12 +118,18 @@
     <div class="feedback-popup">
         <form class="feedback-popup__form">
             <h3 class="feedback-popup__title">Leave a message</h3>
-            <input class="feedback-popup__input" type="text">
-            <input class="feedback-popup__input" type="text">
-            <input class="feedback-popup__input" type="email">
-            <textarea class="feedback-popup__input" name="message" id="" cols="30" rows="10"></textarea>
-            <button class="feedback-popup__send">Send</button>
-            <button class="feedback-popup__close-popup">Close modal</button>
+            <div class="feedback-popup__inputs-box">
+                <input class="feedback-popup__input" type="text" name="first-name" placeholder="First name">
+                <input class="feedback-popup__input" type="text" name="last-name" placeholder="Last name">
+                <input class="feedback-popup__input" type="email" placeholder="Email address">
+            </div>
+            <textarea class="feedback-popup__input" name="message" id="" cols="30" rows="5" placeholder="Message"></textarea>
+            <button class="feedback-popup__send button">Send</button>
+            <button type="button" class="feedback-popup__close-popup">
+                <span class="visually-hidden">
+                    Close modal
+                </span>
+            </button>
         </form>
     </div>
 </body>
