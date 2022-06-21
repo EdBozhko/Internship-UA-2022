@@ -100,3 +100,7 @@ textarea.feedback-popup__input {
     background-color: #414141;
     margin-top: 33px;
 }
+
+.hide {
+    display: none;
+}
