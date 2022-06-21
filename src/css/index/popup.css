@@ -1,0 +1,97 @@
+.feedback-popup {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+
+    width: 96%;
+    max-width: 702px;
+
+    background-color: #FFFFFF;
+    box-shadow: 10px 7px 44px rgba(0, 0, 0, 0.25);
+
+    box-sizing: border-box;
+    padding: 74px 104px 29px;
+}
+
+.feedback-popup__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedback-popup__title {
+    align-self: flex-start;
+
+    font-size: 28px;
+    line-height: 36px;
+
+    color: #000000;
+}
+
+.feedback-popup__close-popup {
+    margin: 0;
+    padding: 0;
+
+    position: absolute;
+    top: 29px;
+    right: 24px;
+
+    width: 24px;
+    height: 24px;
+
+    background-color: transparent;
+    background-image: url('../../img/cross.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    border: none;
+    cursor: pointer;
+}
+
+.feedback-popup__close-popup:active {
+    transform: scale(0.9);
+}
+
+.feedback-popup__inputs-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-top: 32px;
+}
+
+.feedback-popup__input {
+    flex: 1 1 47%;
+    background-color: #FFFFFF;
+
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+
+    padding: 8px 0px 8px 14px;
+    margin-bottom: 24px;
+}
+
+.feedback-popup__input,
+.feedback-popup__input::placeholder {
+    /* font-family: "poppins", Arial, sans-serif; */
+    color: #000000;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.feedback-popup__input:nth-child(2n) {
+    margin-left: 20px;
+}
+
+textarea.feedback-popup__input {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.feedback-popup__send.button {
+    background-color: #414141;
+    margin-top: 33px;
+}
