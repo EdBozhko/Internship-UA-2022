@@ -22,12 +22,14 @@
     background-image: url('../../img/about.png');
     min-height: 483px;
     background-size: cover;
+    flex-basis: 44%;
 }
 
 .image-container.work {
     background-image: url('../../img/work.png');
     min-height: 466px;
     background-size: cover;
+    flex-basis: 44%;
 }
 
 .container.hero {
