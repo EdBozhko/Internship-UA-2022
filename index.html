@@ -16,7 +16,9 @@
 
 <body>
     <header class="main-header">
-        <a class="main-header__logo">twiscode logo</a>
+        <a class="main-header__logo">
+            <img src="./src/img/twiscode_logo.svg" alt="twiscode logo">
+        </a>
         <nav class="main-header__navigation">
             <ul class="navigation__list">
                 <li class="navigation__list-item">
@@ -33,42 +35,48 @@
                 </li>
             </ul>
             <form class="main-header__search">
-                <input name="search" type="search">
-                <button>search button</button>
+                <label for="search-toggle" class="main-header__search-button"></label>
+                <input type="checkbox" name="search-toggle" id="search-toggle" class="visually-hidden">
+                <input name="search" type="search" class="main-header__search-input">
             </form>
         </nav>
     </header>
     <main>
-        <section class="container">
-            <div class="content">
-                <h1>We Code We Deliver</h1>
-                <p>
-                    Twiscode specializes in developing high-performing mobile and web applications.
-                    <button>Get in Touch</button>
+        <section class="container hero">
+            <div class="content hero">
+                <h1 class="content__heading hero">We Code<br>We Deliver</h1>
+                <p class="content__description hero">
+                    Twiscode specializes in developing<br>high-performing mobile and web<br>applications.
                 </p>
+                <button class="content__button hero">Get in Touch</button>
             </div>
-            <div class="image-container"></div>
+            <div class="image-container hero"></div>
         </section>
-        <section class="container">
-            <div id="about" class="content">
-                <h2>Who we are?</h2>
-                <p>Twiscode is a London-based distributed computing startup specialized in providing digital solutions.</p>
-                <p>Our startup’s services are structured around dedicated web service solutions missions. They are aimed at
-                    all the structural, functional departments of financial institutions.</p>                
+        <section>
+            <div class="container about">
+                <div id="about" class="content about">
+                    <h2>Who we are?</h2>
+                    <p class="content__description">Twiscode is a London-based distributed<br>computing startup specialized in providing digital<br>solutions.</p>
+                    <p class="content__description">Our startup’s services are structured around<br>dedicated web service solutions missions. They<br>are aimed at
+                        all the structural, functional<br>departments of financial institutions.</p>                
+                </div>
+                <div class="image-container about"></div>
             </div>
-            <div class="image-container"></div>
 
-            <div id="work" class="content">            
-                <h2>What We Do?</h2>
-                <h3>Mobile Application</h3>
-                <p>Building mobile applications is never easy. P2P lending app ? Logistic App ? E-Commerce App ? We have
-                    done them all. Done them all well. Done them all fast.</p>
-                <h3>Web Application</h3>
-                <p>We can build any web applications you need. A personal blog ? Company Profile ? E-commerce ? or any
-                    specific functionalities ? We got you covered! We have a strong team of web developers that can follow
-                    your stack and needs.</p>
+            <div class="container work">
+                <div id="work" class="content work">            
+                    <h2>What We Do?</h2>
+                    <h3 class="content__subheading">Mobile Application</h3>
+                    <p class="content__description">Building mobile applications is never easy. P2P<br>lending app ? Logistic App ?<br>E-Commerce App ? We have
+                        done them all. Done<br>them all well. Done them all fast.</p>
+                    <h3 class="content__subheading">Web Application</h3>
+                    <p class="content__description">We can build any web applications you need. A<br>personal blog ? Company Profile ? E-commerce ?<br>or any
+                        specific functionalities ? We got you<br>covered! We have a strong team of web developers<br>that can follow
+                        your stack and needs.</p>
+                </div>
+                <div class="image-container work"></div>
             </div>
-            <div class="image-container"></div>
+
         </section>
         <section id="our-customers">
             <h2>Our Customers are our biggest fans</h2>
