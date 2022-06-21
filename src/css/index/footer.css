@@ -1,0 +1,25 @@
+.main-footer {
+    background-color: #F8F8F8;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-sizing: border-box;
+    padding: 19px 80px 19px 109px;
+
+    margin-top: 68px;
+}
+
+.main-footer__phone,
+.main-footer__email,
+.copyright {
+    font-size: 18px;
+    line-height: 27px;
+    color: #414141;
+}
+
+.main-footer__phone:hover,
+.main-footer__email:hover {
+    color: #000000;
+}
